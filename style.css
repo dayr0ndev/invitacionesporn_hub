@@ -1,0 +1,69 @@
+/* Estilos base (para pantallas grandes y medianas) */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.invitacion-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.fila-separada {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1px;
+  margin-top: 0px;
+}
+
+/* Alineación de textos */
+.izquierda {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.derecha {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.info p, .info h1, .info h2 {
+  margin: 5px 0;
+}
+
+/* 💡 Responsive: para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .izquierda, .derecha {
+    text-align: center;
+    margin: 0;
+  }
+
+  .invitacion-img {
+    border-radius: 8px;
+  }
+}
